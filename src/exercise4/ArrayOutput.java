@@ -12,6 +12,10 @@ public class ArrayOutput {
 
         int[] numbers = new int[count];
 
+        for(int i = 0; i < numbers.length; i++){
+          numbers[i] = input.nextInt();
+    }
+
         for(int i=0; i<numbers.length; i++){
           for(int e = 0; e < space; e++){
             System.out.print(" ");

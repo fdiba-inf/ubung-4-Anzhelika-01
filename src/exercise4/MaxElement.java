@@ -10,6 +10,10 @@ public class MaxElement {
     double maxNumber = 0.0;
     double[] numbers = new double[count];
 
+    for(int i = 0; i < numbers.length; i++){
+      numbers[i] = input.nextInt();
+    }
+
     for(int i = 0; i < count; i++){
       if(numbers[i] > maxNumber){
         maxNumber = numbers[i];

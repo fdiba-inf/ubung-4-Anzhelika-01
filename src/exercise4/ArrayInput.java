@@ -8,7 +8,7 @@ public class ArrayInput {
     int count = input.nextInt();
     int[] numbers = new int[count];
 
-    for(int i = 0; i <= numbers.length; i++){
+    for(int i = 0; i < numbers.length; i++){
       numbers[i] = input.nextInt();
     }
     String numbersAsString  = Arrays.toString(numbers);
