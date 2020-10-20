@@ -19,6 +19,6 @@ public class MinIndex {
         minNumber = numbers[i];
       }
     }
-    System.out.print("Min number: " + minNumber);
+    System.out.print("Min index: " + minNumber);
   }
 }
