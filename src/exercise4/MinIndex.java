@@ -7,16 +7,16 @@ public class MinIndex {
     Scanner input = new Scanner(System.in);
 
     int count = input.nextInt();
-    double minNumber = 0.0;
+    int minNumber = 0;
     double[] numbers = new double[count];
 
     for(int i = 0; i < numbers.length; i++){
       numbers[i] = input.nextInt();
     }
 
-    for(int i = 0; i < count; i++){
-      if(numbers[i] < minNumber){
-        minNumber = numbers[i];
+    for(int i = 1; i < count; i++){
+      if(numbers[i] < numbers[minNumber]){
+        minNumber = i;
       }
     }
     System.out.print("Min index: " + minNumber);
